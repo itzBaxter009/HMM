@@ -1,0 +1,15 @@
+<ion-content [fullscreen]="true">
+<form (ngsubmit)="FormularioInicio()">
+    <ion-item>
+      <ion-label color="primary">N°. Seguro social:</ion-label>
+      <ion-textarea  [(ngModel)]="user.nsocial" name ="description" required></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary">Password:</ion-label>
+      <ion-input type="password" [(ngModel)]="user.password" ></ion-input>
+    </ion-item>
+   
+    
+    <ion-button expand="block" (click)="ClearData()" href="/loby">Aceptar <ion-icon name="arrow-redo-outline"></ion-icon></ion-button>
+  </form>
+</ion-content>

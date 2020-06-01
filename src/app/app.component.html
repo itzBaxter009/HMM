@@ -1,0 +1,22 @@
+<ion-app>
+
+  <ion-menu side="start" menuId="first" contentId="main">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Opciones:</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item href="/examenes"> <ion-icon name="document-text-outline"></ion-icon> Resultado de Examenes </ion-item>
+        <ion-item href="/henfermedades"> <ion-icon name="document-text-outline"></ion-icon>Historial de enfermedades</ion-item>
+        <ion-item href="/hvacunas"> <ion-icon name="document-text-outline"></ion-icon>Historial de Vacunas</ion-item>
+        <ion-item href="/alergias"> <ion-icon name="document-text-outline"></ion-icon>Alergias</ion-item>
+        <ion-item href="/ehereditarias"> <ion-icon name="document-text-outline"></ion-icon>Enfermedades hereditarias</ion-item>
+        <ion-item href="/home"><ion-icon name="arrow-undo-outline"  ></ion-icon>Salir</ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>
